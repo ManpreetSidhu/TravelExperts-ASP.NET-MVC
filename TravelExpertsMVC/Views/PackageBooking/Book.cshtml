@@ -1,0 +1,65 @@
+﻿@*Created by Manpreet Kaur Sidhu*@
+@model IEnumerable<TravelExpertsData.Package>
+
+@{
+    ViewData["Title"] = "Book";
+}
+
+<h1>Book</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PackageId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PkgName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PkgStartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PkgEndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PkgDesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PkgBasePrice)
+            </th>
+            
+          
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PkgName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PkgStartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PkgEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PkgDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PkgBasePrice)
+            </td>
+            
+            <td>
+                @Html.ActionLink("Add", "Add", new { id=item.PackageId ,name = item.PkgName }) 
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+

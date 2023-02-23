@@ -1,0 +1,49 @@
+﻿@* Created by Manpreet Kaur Sidhu*@
+@model TravelExpertsData.Booking
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+
+<h4>Booking</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Add" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+         
+            <div class="form-group">
+                <label asp-for="TravelerCount" class="control-label"></label>
+                <input asp-for="TravelerCount" class="form-control" />
+                <span asp-validation-for="TravelerCount" class="text-danger"></span>
+            </div>
+       
+            <div class="form-group">
+                <label asp-for="TripTypeId" class="control-label"></label>
+                <select name="id" asp-items="@ViewBag.TripType"   class="form-control select" >
+                  
+                </select>
+                
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Package Name</label>
+                <input  class="form-control" value="@ViewBag.PkgName"  readonly/>
+         
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-danger btn-group-lg" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Packages">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

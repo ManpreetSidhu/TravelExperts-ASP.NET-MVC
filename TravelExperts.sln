@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelExpertsMVC", "TravelExpertsMVC\TravelExpertsMVC.csproj", "{EB1CE257-41AB-453B-A461-A7373C47434A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelExpertsData", "TravelExpertsData\TravelExpertsData.csproj", "{746A2DBC-C744-41A5-9B3D-5C0B0269955A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB1CE257-41AB-453B-A461-A7373C47434A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1CE257-41AB-453B-A461-A7373C47434A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1CE257-41AB-453B-A461-A7373C47434A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1CE257-41AB-453B-A461-A7373C47434A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{746A2DBC-C744-41A5-9B3D-5C0B0269955A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{746A2DBC-C744-41A5-9B3D-5C0B0269955A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{746A2DBC-C744-41A5-9B3D-5C0B0269955A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{746A2DBC-C744-41A5-9B3D-5C0B0269955A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B416FA2E-100E-409D-9C6C-948765556A9D}
+	EndGlobalSection
+EndGlobal
